@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurikulum</title>
+  <link rel="stylesheet" href="style-kurikulum.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-nav">
+       <img src="img/uin-logo-removebg-preview.png" alt="Logo Kampus" class="logo">
+      <h1 class="site-title">Program Studi Agribisnis</h1>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="kurikulum.html" class="active">Kurikulum</a></li>
+        <li><a href="galeri.html">Galeri & Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- BANNER (disamakan dengan index.html, pakai video autoplay) -->
+<section class="banner">
+  <video autoplay muted loop playsinline class="banner-video">
+    <source src="img/agrimp4.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video tag.
+  </video>
+
+  <div class="banner-overlay">
+    <h1 class="banner-heading">Agribusiness Study Program</h1>
+    <p class="banner-subheading">Faculty of Science and Technology – UIN Syarif Hidayatullah Jakarta</p>
+    <a href="kurikulum.html" class="btn-banner">Lihat Kurikulum</a>
+  </div>
+</section>
+
+  <section class="content container">
+    <h2>Struktur Kurikulum</h2>
+    <p>Program Studi Agribisnis menawarkan kurikulum komprehensif yang dirancang untuk mempersiapkan mahasiswa menghadapi tantangan industri pertanian modern.</p>
+    
+    <div class="table-wrapper">
+      <h3>Semester 1</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Kode MK</th>
+            <th>Nama Kelas</th>
+            <th>Mata Kuliah</th>
+            <th>SKS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>UIN6014203</td><td>1CD</td><td>Bahasa Inggris</td><td>3</td></tr>
+          <tr><td>FST6092103</td><td>1D</td><td>Dasar Komunikasi Agribisnis</td><td>2</td></tr>
+          <tr><td>FST6091110</td><td>1D</td><td>Literasi Digital</td><td>2</td></tr>
+          <tr><td>NAS6112203</td><td>1CD</td><td>Pendidikan Kewarganegaraan</td><td>2</td></tr>
+          <tr><td>FST6092108</td><td>1D</td><td>Pengantar Ilmu Ekonomi</td><td>3</td></tr>
+          <tr><td>FST6092129</td><td>1D</td><td>Pengantar Ilmu Pertanian</td><td>2</td></tr>
+          <tr><td>UIN6033205</td><td>1D</td><td>Praktikum Qiraah dan Ibadah</td><td>2</td></tr>
+          <tr><td>UIN6032201</td><td>1CD</td><td>Studi Islam</td><td>4</td></tr>
+        </tbody>
+      </table>
+
+    <div class="info-box">
+      <h3>Catatan Penting</h3>
+      <ul>
+        <li>Total SKS yang harus ditempuh: 144 SKS</li>
+        <li>Masa studi normal: 8 semester</li>
+        <li>Tersedia mata kuliah pilihan mulai semester 5</li>
+        <li>Wajib mengikuti praktikum dan PKL</li>
+      </ul>
+    </div>
+  </section>
+
+<script>
+  // Ambil elemen header
+  const header = document.querySelector('.site-header');
+
+  // Fungsi untuk animasi saat scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Program Studi Agribisnis, Fakultas Sains dan Teknologi, UIN Syarif Hidayatullah Jakarta.</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+  </footer>
+</body>
+</html>

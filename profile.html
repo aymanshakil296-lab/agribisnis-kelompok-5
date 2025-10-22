@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Program Studi Agribisnis</title>
+  <link rel="stylesheet" href="style-profile.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-nav">
+      <img src="img/uin-logo-removebg-preview.png" alt="Logo Kampus" class="logo">
+      <h1 class="site-title">Program Studi Agribisnis</h1>
+    </div>
+    
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profile.html" class="active">Profil</a></li>
+        <li><a href="kurikulum.html">Kurikulum</a></li>
+        <li><a href="galeri.html">Galeri & Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER (disamakan dengan index.html, pakai video autoplay) -->
+<section class="banner">
+  <video autoplay muted loop playsinline class="banner-video">
+    <source src="img/agrimp4.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video tag.
+  </video>
+
+  <div class="banner-overlay">
+    <h1 class="banner-heading">Agribusiness Study Program</h1>
+    <p class="banner-subheading">Faculty of Science and Technology – UIN Syarif Hidayatullah Jakarta</p>
+    <a href="kurikulum.html" class="btn-banner">Lihat Kurikulum</a>
+  </div>
+</section>
+
+
+  <!-- MAIN CONTENT -->
+  <section class="content container">
+    <h2>Sejarah Singkat</h2>
+    <p>
+      Program Studi Agribisnis berdiri sejak tahun <strong>2005</strong> sebagai bagian dari upaya universitas dalam mengembangkan sumber daya manusia yang berkompeten di bidang pertanian, ekonomi, dan bisnis modern.
+      Dengan dukungan tenaga pengajar profesional, kurikulum berbasis riset, serta kolaborasi dengan lembaga nasional dan internasional, Agribisnis terus berkomitmen mencetak lulusan unggul yang adaptif terhadap perubahan zaman.
+    </p>
+
+    <h2>Visi</h2>
+    <p><em>“Menjadi Program Studi unggulan yang inovatif dan berdaya saing dalam bidang agribisnis berbasis nilai-nilai keislaman.”</em></p>
+
+    <h2>Misi</h2>
+    <ul>
+      <li>Menyelenggarakan pendidikan tinggi di bidang agribisnis yang berbasis ilmu pengetahuan dan teknologi.</li>
+      <li>Melaksanakan penelitian inovatif untuk mendukung pengembangan sektor pertanian berkelanjutan.</li>
+      <li>Berperan aktif dalam pengabdian masyarakat melalui pemberdayaan pelaku usaha pertanian.</li>
+      <li>Meningkatkan jejaring kemitraan dengan lembaga akademik, industri, dan pemerintah.</li>
+    </ul>
+
+    <h2>Tujuan</h2>
+    <p>
+      Tujuan utama program studi adalah menghasilkan lulusan yang berkarakter, kreatif, dan mampu menjadi pelaku serta penggerak ekonomi agribisnis secara profesional dan etis.
+    </p>
+
+    <h2>Struktur Organisasi</h2>
+    <div class="dosen-cards">
+      <div class="dosen-card">
+        <img src="img/agus.jpg" alt="Agustina Senjayani, M.Si">
+        <h3>Agustina Senjayani, M.Si</h3>
+        <p>Pendidikan Kewarganegaraan</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/armaeni.jpg" alt="Ir. Armaeni Dwi Humaerah, M.Si">
+        <h3>Ir. Armaeni Dwi Humaerah, M.Si</h3>
+        <p>Pengantar Ilmu Pertanian</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/dr.fahriany.jpg" alt="Dr. Fahriany, M.Pd">
+        <h3>Dr. Fahriany, M.Pd</h3>
+        <p>Bahasa Inggris</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/fushaili.jpg" alt="Dr. Achmad Fudhaili, M.Pd">
+        <h3>Dr. Achmad Fudhaili, M.Pd</h3>
+        <p>Koordinator Penelitian</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/tien.jpg" alt="Dr. Tien Rohmatin, M.A">
+        <h3>Dr. Tien Rohmatin, M.A</h3>
+        <p>Studi Islam</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/hendra-bayu.jpg" alt="Hendra Bayu Suseno, M.Kom">
+        <h3>Hendra Bayu Suseno, M.Kom</h3>
+        <p>Literasi Digital</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/nunuk adriani.jpg" alt="Dr. Nunuk Adiarni, MM">
+        <h3>Dr. Nunuk Adiarni, MM</h3>
+        <p>Dasar Komunikasi Agribisnis</p>
+      </div>
+      <div class="dosen-card">
+        <img src="img/rohaeni.jpg" alt="Prof.Dr.Ir Siti Rochaeni, M.Si">
+        <h3>Prof.Dr.Ir Siti Rochaeni, M.Si</h3>
+        <p>Pengantar Ilmu Ekonomi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL ANIMATION -->
+  <script>
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Program Studi Agribisnis, Fakultas Sains dan Teknologi, UIN Syarif Hidayatullah Jakarta.</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+  </footer>
+</body>
+</html>

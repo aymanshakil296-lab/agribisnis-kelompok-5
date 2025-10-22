@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri & Kontak</title>
+  <link rel="stylesheet" href="style-galeri.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-nav">
+       <img src="img/uin-logo-removebg-preview.png" alt="Logo Kampus" class="logo">
+      <h1 class="site-title">Program Studi Agribisnis</h1>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="kurikulum.html">Kurikulum</a></li>
+        <li><a href="galeri.html" class="active">Galeri & Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER (disamakan dengan index.html, pakai video autoplay) -->
+<section class="banner">
+  <video autoplay muted loop playsinline class="banner-video">
+    <source src="img/agrimp4.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video tag.
+  </video>
+
+  <div class="banner-overlay">
+    <h1 class="banner-heading">Agribusiness Study Program</h1>
+    <p class="banner-subheading">Faculty of Science and Technology – UIN Syarif Hidayatullah Jakarta</p>
+    <a href="kurikulum.html" class="btn-banner">Lihat Kurikulum</a>
+  </div>
+</section>
+
+
+  <section class="content container">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img/agri1.jpg" alt="Praktikum Lapangan">
+        <div class="gallery-caption">Praktikum Lapangan di Kebun Percobaan</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/agri2.jpg" alt="Seminar Agribisnis">
+        <div class="gallery-caption">Seminar Nasional Agribisnis 2025</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/agri3.jpg" alt="Kunjungan Industri">
+        <div class="gallery-caption">Kunjungan ke Industri Pertanian Modern</div>
+      </div>
+      <div class="gallery-item">
+        <img src="img/agri4.jpg" alt="Workshop">
+        <div class="gallery-caption">Workshop Teknologi Pertanian</div>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <h2>Hubungi Kami</h2>
+      <div class="contact-info">
+        <div class="contact-details">
+          <h3>Informasi Kontak</h3>
+          <p><strong>Alamat:</strong> Jl. Ir. H. Juanda No. 95, Ciputat, Tangerang Selatan</p>
+          <p><strong>Email:</strong> agribisnis@uinjkt.ac.id</p>
+          <p><strong>Telepon:</strong> (021) 7493606</p>
+          <p><strong>Jam Kerja:</strong> Senin - Jumat, 08.00 - 16.00 WIB</p>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <form class="form-contact">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subjek">Subjek</label>
+              <input type="text" id="subjek" name="subjek" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Program Studi Agribisnis, Fakultas Sains dan Teknologi, UIN Syarif Hidayatullah Jakarta.</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+  </footer>
+</body>
+</html>
+             
